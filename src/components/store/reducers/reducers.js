@@ -5,7 +5,7 @@ import {
   FETCH_LOADING,
   FETCH_ERROR,
   GET_FAVS_FROM_LS,
-} from "./actions";
+} from "../actions/actions";
 
 const initial = {
   favs: [],
