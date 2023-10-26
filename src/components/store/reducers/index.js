@@ -4,5 +4,5 @@ import { favReducer } from "./favReducer";
 
 export const rootReducers = combineReducers({
   data: dataReducer,
-  //   favorites: favReducer,
+  favorites: favReducer,
 });

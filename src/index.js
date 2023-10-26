@@ -8,6 +8,8 @@ import { legacy_createStore as createStore } from "redux";
 import { Provider } from "react-redux";
 import { myReducer } from "./components/store/reducers/reducers";
 import { myStore } from "./components/store/store";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,6 +17,7 @@ root.render(
     <BrowserRouter>
       <>
         <App />
+        <ToastContainer></ToastContainer>
       </>
     </BrowserRouter>
   </Provider>

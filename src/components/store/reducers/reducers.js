@@ -10,7 +10,7 @@ import {
 const initial = {
   favs: [],
   current: null,
-  error: null,
+  error: "",
   loading: true,
 };
 

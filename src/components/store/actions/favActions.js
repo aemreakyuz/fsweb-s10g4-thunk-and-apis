@@ -11,10 +11,10 @@ export const addFav = (item) => {
   };
 };
 
-export const removeFav = (id) => {
+export const removeFav = (fav) => {
   return {
     type: FAV_REMOVE,
-    payload: id,
+    payload: fav,
   };
 };
 
