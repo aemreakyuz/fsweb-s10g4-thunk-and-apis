@@ -1,9 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-function Item() {
+function Item({ data }) {
   const current = useSelector((store) => store.data.current);
-  console.log(current);
 
   return (
     <div className="shadow-md bg-white text-center">

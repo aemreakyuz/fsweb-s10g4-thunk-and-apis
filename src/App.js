@@ -6,13 +6,11 @@ import { fetchData } from "./components/store/actions/dataActions";
 import { useDispatch, useSelector } from "react-redux";
 
 export default function App() {
-  const loading = false;
-  const current = null;
   const favs = [];
 
   const dispatch = useDispatch();
 
-  const data = useSelector((store) => store.data);
+  const { current, loading } = useSelector((store) => store.data);
 
   useEffect(() => {
     dispatch(fetchData());
